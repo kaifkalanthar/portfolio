@@ -1,11 +1,14 @@
-import './App.css';
+import React from 'react';
+import './App.scss';
+import NavBar from './component/navBar';
+import HeroSection from './component/heroSection';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hey Kaif!</h1>
-      <p>My portfolio</p>
-    </div>
+    <React.Fragment>
+      <NavBar />
+      <HeroSection />
+    </React.Fragment>
   );
 }
 
