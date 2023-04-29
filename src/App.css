@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+body .logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 37.5px;
+  outline: #E5D1FA;
+  border: 1px solid #D0D0D0;
+}
+
+body .kp {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+body .herosection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+body .hs-header {
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 4rem;
+}
+
+body .hs-subheader {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+body .hs-content {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+body .hero-image {
+  width: 600px;
+}
+
+body .button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  margin: 30px 0px;
+  background: #E5D1FA;
+  font-family: 'poppins', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+body .button:hover {
+  width: 220px;
+  height: 60px;
+  border: 2px solid #E5D1FA;
+  margin: 30px 0px;
+  background: none;
+  outline: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body .project-header {
+  font-size: 35px;
+  font-weight: 200;
+  padding: 30px;
+}
+
+body .card-header {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+body .project-container {
+  text-align: center;
+  padding: 30px 0;
+}
+
+body .pj-cards-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 20px;
+}
+
+body .pj-card {
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  -webkit-box-shadow: 9px 8px 34px 2px #FFF4D2;
+          box-shadow: 9px 8px 34px 2px #FFF4D2;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body .pj-card:hover {
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  -webkit-box-shadow: 9px 8px 34px 2px #FFF4D2;
+          box-shadow: 9px 8px 34px 2px #FFF4D2;
+  -webkit-transform: scaleX(-1);
+  transform: rotate(90deg);
+  transform: scaleX(-1);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+body .pj-card:hover .card-header {
+  display: none;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+body .pj-card:hover .abt-pj {
+  text-align: start;
+  display: none;
+}
+
+body .pj-card:hover .abt-action {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+body .pj-card:hover .git-logo {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+body .pj-card:hover .abt-li {
+  display: none;
+  padding: 5px 0;
+}
+
+body .pj-card:hover .pj-btn {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background: #E5D1FA;
+  font-family: 'poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  text-align: center;
+}
+
+body .pj-card:hover .pj-btn:hover {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #E5D1FA;
+  background: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+body .pj-card:hover .git-logo:hover {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
+  cursor: pointer;
+}
+
+body .pj-card:hover .pj-img {
+  width: 300px;
+  display: inline;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+body .git-logo:hover {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
+  cursor: pointer;
+}
+
+body .abt-pj {
+  text-align: start;
+}
+
+body .abt-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+body .abt-li {
+  padding: 5px 0;
+}
+
+body .pj-btn {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background: #E5D1FA;
+  font-family: 'poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+body .pj-img {
+  width: 300px;
+  display: none;
+}
+
+body .pj-btn:hover {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #E5D1FA;
+  background: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  body .herosection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 37.5px;
+    outline: #E5D1FA;
+    border: 1px solid #D0D0D0;
+  }
+  body .kp {
+    font-weight: 100;
+    font-size: 25px;
+  }
+  body .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0px;
+  }
+  body .herosection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .hs-header {
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 2rem;
+  }
+  body .hs-subheader {
+    font-weight: 100;
+    font-size: 18px;
+  }
+  body .hs-content {
+    font-weight: 200;
+    font-size: 16px;
+  }
+  body .hero-image {
+    width: 300px;
+  }
+  body .card-header {
+    font-weight: 300;
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 body {
   $background_color : #ECF2FF;
   $primary_color: #E5D1FA;
@@ -28,6 +29,7 @@ body {
   .herosection {
     display: flex;
     align-items: center;
+    overflow-x: hidden;
   }
 
   .hs-header {
@@ -76,7 +78,177 @@ body {
     font-size: 20px;
     cursor: pointer;
   }
-
+                .project-header {
+                  font-size: 35px;
+                  font-weight: 200;
+                  padding: 30px;
+                }
+        
+                .card-header {
+                  font-weight: 300;
+                  font-size: 30px;
+                }
+        
+                .project-container {
+                  text-align: center;
+                  padding: 30px 0;
+                }
+        
+                .pj-cards-container {
+                  align-items: center;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  column-gap: 50px;
+                  row-gap: 20px;
+                }
+        
+                .pj-card {
+                  padding: 20px;
+                  width: 300px;
+                  height: 400px;
+                  box-shadow: 9px 8px 34px 2px #FFF4D2;
+                  transition: 0.5s ease;
+                }
+        
+                .pj-card:hover {
+                  padding: 20px;
+                  width: 300px;
+                  height: 400px;
+                  box-shadow: 9px 8px 34px 2px #FFF4D2;
+                  -webkit-transform: scaleX(-1);
+                  transform: rotate(90deg);
+                  transform: scaleX(-1);
+                  transition: 0.8s ease;
+        
+                  .card-header {
+                    display: none;
+                    font-weight: 300;
+                    font-size: 30px;
+                  }
+        
+                  .abt-pj {
+                    text-align: start;
+                    display: none;
+                  }
+        
+                  .abt-action {
+                    display: none;
+                    display: flex;
+                    align-items: end;
+                    justify-content: space-between;
+                    padding: 20px;
+        
+                  }
+        
+                  .git-logo {
+                    transform: scaleX(-1);
+                  }
+        
+                  .abt-li {
+                    display: none;
+                    padding: 5px 0;
+                  }
+        
+                  .pj-btn {
+                    width: 140px;
+                    height: 50px;
+                    border: none;
+                    background: $primary_color;
+                    font-family: 'poppins', sans-serif;
+                    font-weight: 200;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                    transform: scaleX(-1);
+                    text-align: center;
+                  }
+    
+                    .pj-btn:hover {
+                      width: 150px;
+                      height: 50px;
+                      border: 2px solid $primary_color;
+                      background: none;
+                      font-family: 'poppins', sans-serif;
+                      font-weight: 200;
+                      font-size: 14px;
+                      cursor: pointer;
+                      transition: 0.2s ease;
+                      text-align: center;
+                    }
+          
+                    .git-logo:hover {
+                      transition: 0.1s ease;
+                      transform: translate(0px, -5px);
+                      cursor: pointer;
+                    }
+          
+                    .pj-img {
+                      width: 300px;
+                      display: inline;
+                      transform: scaleX(-1);
+                    }
+                    }
+          
+                    .git-logo:hover {
+                      transition: 0.1s ease;
+                      transform: translate(0px, -5px);
+                      cursor: pointer;
+                    }
+          
+                    .abt-pj {
+                      text-align: start;
+                    }
+          
+                    .abt-action {
+                      display: flex;
+                      justify-content: space-between;
+                      padding: 20px;
+                    }
+          
+                    .abt-li {
+                      padding: 5px 0;
+                    }
+          
+                    .pj-btn {
+                      width: 140px;
+                      height: 50px;
+                      border: none;
+                      background: $primary_color;
+                      font-family: 'poppins', sans-serif;
+                      font-weight: 200;
+                      font-size: 14px;
+                      cursor: pointer;
+                      transition: 0.2s ease;
+                      text-align: center;
+          
+                    }
+          
+                    .pj-img {
+                      width: 300px;
+                      display: none;
+                    }
+          
+                    .pj-btn:hover {
+                      width: 150px;
+                      height: 50px;
+                      border: 2px solid $primary_color;
+                      background: none;
+                      font-family: 'poppins', sans-serif;
+                      font-weight: 200;
+                      font-size: 14px;
+                      cursor: pointer;
+                      transition: 0.2s ease;
+                      text-align: center;
+                    }
+          
+                    @media screen and (max-width : 1000px) {
+                      .herosection {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                      }
+                    }
   @media screen and (max-width: 480px) {
     .logo {
       width: 50px;
@@ -121,8 +293,13 @@ body {
     }
 
     .hero-image {
-      width: 400px;
-    }
+      width: 300px;
+      }
+      
+      .card-header {
+        font-weight: 300;
+        font-size: 25px;
+      }
   }
 
 }
