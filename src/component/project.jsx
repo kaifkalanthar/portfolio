@@ -1,54 +1,66 @@
 import React from 'react';
+import img_1 from '../external/img_1.jpg';
+import pj1 from '../external/pj1.gif';
+import pj2 from '../external/pj2.gif';
+import pj3 from '../external/pj3.gif';
 import github from '../external/github.svg';
-import pj1 from '../external/pj1.svg';
-import pj2 from '../external/pj2.svg';
 
 const Project = () => {
     return (
         <div className="project-container">
-            <h1 className="project-header">PROJECT</h1>
-            <div className="pj-cards-container">
-                <div className="pj-card">
-                <img className='pj-img' src = {pj1}/>
-                    <h1 className="card-header">Curly_B - Blogging website</h1>
-                    <u1 className="abt-pj">
-                        <li className="abt-li">Built with React.js, Node.js, MongoDB, npm, and Bootstrap</li>
-                        <li className="abt-li">User authentication feature allows users to register and log in to the site</li>
-                        <li className="abt-li">Admin-only post creation feature ensures that only approved content is added to the site</li>
-                    </u1>
-                    <div className="abt-action">
-                        <button className="pj-btn">View site</button>
-                        <img src = {github} className='git-logo'/>
+            <h1 className="project-header">Projects</h1>
+            <div className="card-container">
+            <div className="card">
+                <div className="img-container">
+                    <img src={pj1} alt="" className="img" />
+                </div>
+                <div className="card-content">
+                    <h2 className="title">CurlyB.com</h2>
+                    <p className="summary">Built with React.js, Node.js, MongoDB, npm, and Bootstrap
+User authentication feature allows users to register and log in to the site
+Admin-only post creation feature ensures that only approved...
+                    </p>
+                    <div className="footer">
+                        <button className="button"><a className="demo" href='https://curly-b-xgc0.onrender.com'>View Site</a></button>
+                        <a href='https://github.com/kaifkalanthar/SpaceY'><img src = {github} className='git-logo'/></a>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="img-container">
+                    <img src={pj2} alt="" className="img" />
+                </div>
+                <div className="card-content">
+                    <h2 className="title">HackTech</h2>
+                    <p className="summary">I created a website for my c
+                    ollege's Hackathon event - HackTech. It displays problem statements and allows team registration.
+                     The website was developed using the MERN stack.
+                    </p>
+                    <div className="footer">
+                        <button className="button"><a className="demo" href='https://hacktech.netlify.app'>View Site</a></button>
+                        <a href='https://github.com/kaifkalanthar/SpaceY'><img src = {github} className='git-logo'/></a>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="img-container">
+                    <img src={pj3} alt="" className="img" />
+                </div>
+                <div className="card-content">
+                    <h2 className="title">Space Y</h2>
+                    <p className="summary">My capstone project in data science is a part of IBM's DATA SCIENCE professional certificate course,
+                     serving as a culmination of my learning journey.(Prediction analysis)
+                    </p>
+                    <div className="footer">
+                        <button className="button"><a className="demo" href='https://github.com/kaifkalanthar/SpaceY'>View Site</a></button>
+                        <a href='https://github.com/kaifkalanthar/SpaceY'><img src = {github} className='git-logo'/></a>
                     </div>
                     
+
                 </div>
-                <div className="pj-card">
-                <img className='pj-img' src = {pj2}/>
-                    <h1 className="card-header">Curly_B - Blogging website</h1>
-                    <u1 className="abt-pj">
-                        <li className="abt-li">Built with React.js, Node.js, MongoDB, npm, and Bootstrap</li>
-                        <li className="abt-li">User authentication feature allows users to register and log in to the site</li>
-                        <li className="abt-li">Admin-only post creation feature ensures that only approved content is added to the site</li>
-                    </u1>
-                    <div className="abt-action">
-                        <button className="pj-btn">View site</button>
-                        <img src = {github} className='git-logo'/>
-                    </div>
-                    
-                </div>
-                <div className="pj-card">
-                    <h1 className="card-header">Curly_B - Blogging website</h1>
-                    <u1 className="abt-pj">
-                        <li className="abt-li">Built with React.js, Node.js, MongoDB, npm, and Bootstrap</li>
-                        <li className="abt-li">User authentication feature allows users to register and log in to the site</li>
-                        <li className="abt-li">Admin-only post creation feature ensures that only approved content is added to the site</li>
-                    </u1>
-                    <div className="abt-action">
-                        <button className="pj-btn">View site</button>
-                        <img src = {github} className='git-logo'/>
-                    </div>
-                </div>
-                
+            </div>
+            
+            
             </div>
         </div>
     );
