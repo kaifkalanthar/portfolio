@@ -101,6 +101,17 @@ body {
       border:2px solid #E5D1FA;
       padding: 20px;
       border-radius: 10px;
+      transition: 0.2 ease;
+    }
+    span:hover{
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 200;
+      background: #E5D1FA;
+      border:2px solid #E5D1FA;
+      padding: 20px;
+      border-radius: 10px;
+      
     }
   }
   
