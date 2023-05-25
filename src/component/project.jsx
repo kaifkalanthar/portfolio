@@ -3,6 +3,7 @@ import img_1 from '../external/img_1.jpg';
 import pj1 from '../external/pj1.gif';
 import pj2 from '../external/pj2.gif';
 import pj3 from '../external/pj3.gif';
+import pj4 from '../external/pj4.gif';
 import github from '../external/github.svg';
 
 
@@ -46,6 +47,13 @@ const Project = () => {
             src: pj2,
             liveDemo: 'https://hacktech.netlify.app',
             srcCode: 'https://github.com/kaifkalanthar/HackTech'
+        },
+        {
+            title: 'ManageApp',
+            summary: `Tailwind CSS was utilized to create a progress tracking app that boasts a visually appealing design and user-friendly interface, making it effortless to track and monitor your goals effectively.`,
+            src: pj4,
+            liveDemo: 'https://manage-app-omega.vercel.app/',
+            srcCode: 'https://github.com/kaifkalanthar/Manage'
         },
     ]
     return (
