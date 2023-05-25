@@ -8,7 +8,7 @@ import github from '../external/github.svg';
 
 const renderCard = (title, summary, src, liveDemo, srcCode) => {
     return (
-        <div className="card">
+        <div className="card" key={title}>
             <div className="img-container">
                 <img src={src} alt="" className="img" />
             </div>
@@ -41,7 +41,7 @@ const Project = () => {
             srcCode: 'https://github.com/kaifkalanthar/Blogging'
         },
         {
-            title: '',
+            title: 'HackTech',
             summary: `I created a website for my colleges Hackathon event - HackTech. It displays problem statements and allows team registration.The website was developed using the MERN stack.`,
             src: pj2,
             liveDemo: 'https://hacktech.netlify.app',
@@ -49,7 +49,7 @@ const Project = () => {
         },
     ]
     return (
-        <div className="project-container">
+        <div className="project-container" id='project'>
             <h1 className="project-header">Projects</h1>
             <div className="card-container">
                 {projectData.map(data =>
